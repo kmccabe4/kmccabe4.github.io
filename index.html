@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ken McCabe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    /* Page basics */
+    body {
+      margin: 0;
+      padding: 0;
+      background: #e4e6eb;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #222;
+    }
+
+    .page-wrapper {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 16px;
+    }
+
+    .card {
+      background: #f6f7fb;
+      max-width: 960px;
+      width: 100%;
+      padding: 32px 32px 40px;
+      box-sizing: border-box;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+      display: flex;
+      gap: 32px;
+    }
+
+    .content {
+      flex: 2 1 0;
+    }
+
+    .photo-wrapper {
+      flex: 1 1 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .photo-wrapper img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 3rem;
+      letter-spacing: 0.02em;
+    }
+
+    .email {
+      margin-top: 0;
+      margin-bottom: 24px;
+      font-size: 1rem;
+    }
+
+    .email a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px dotted #555;
+    }
+
+    p {
+      margin: 0 0 16px;
+      line-height: 1.5;
+      font-size: 1rem;
+    }
+
+    a {
+      color: #003366;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+    }
+
+    /* Small screens */
+    @media (max-width: 720px) {
+      .card {
+        flex-direction: column;
+        padding: 24px 20px 32px;
+      }
+
+      .photo-wrapper {
+        order: -1;
+      }
+
+      h1 {
+        font-size: 2.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <main class="card">
+      <section class="content">
+        <h1>Ken McCabe</h1>
+        <p class="email">
+          <a href="mailto:mccabe.ke@northeastern.edu">mccabe.ke AT northeastern DOT edu</a>
+        </p>
+
+        <p>
+          As of Fall 2024, I will be a PhD student in the Mathematics Department at
+          Northeastern University, working with Prof.
+          <a href="#">Jose Perea</a>.
+        </p>
+
+        <p>
+          Before that, I completed my MA and BA in Mathematics at University at Albany,
+          SUNY, working with Prof. <a href="#">Michael Lesnick</a>.
+        </p>
+
+        <p>
+          My research interests include <a href="#">topological data analysis</a>,
+          computational geometry and topology, and applications thereof.
+          I am especially interested in <a href="#">multiparameter persistent homology</a>,
+          and in questions related to density-sensitive simplicial bifiltrations
+          on metric spaces.
+        </p>
+
+        <p>
+          Before coming to University at Albany, I studied jazz saxophone performance at
+          <a href="#">Temple University Boyer College of Music</a> in Philadelphia, under
+          <a href="#">Dick Oatts</a>.
+        </p>
+
+        <p>
+          I am originally from <a href="#">Clifton Park, New York</a>.
+        </p>
+      </section>
+
+      <aside class="photo-wrapper">
+        <!-- Replace "profile.jpg" with the actual filename of your uploaded headshot -->
+        <img src="profile.jpg" alt="Ken McCabe headshot" />
+      </aside>
+    </main>
+  </div>
+</body>
+</html>
