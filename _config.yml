@@ -1,0 +1,7 @@
+title: "Ken McCabe"
+description: "PhD student in mathematics at Northeastern University. Topological data analysis, persistent homology, multiparameter persistence."
+url: "https://kenmccabe.net"  # or your custom domain if you have one
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
